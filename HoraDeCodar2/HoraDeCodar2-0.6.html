@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let n1 = Number(prompt("Digite o primeiro número:"));
+let n2 = Number(prompt("Digite o segundo número:"));
+let n3 = Number(prompt("Digite o terceiro número:"));
+let n4 = Number(prompt("Digite o quarto número:"));
+
+let maior;
+
+if (n1 > n2 && n1 > n3 && n1 > n4) {
+    maior = n1;
+} else if (n2 > n1 && n2 > n3 && n2 > n4) {
+    maior = n2;
+} else if (n3 > n1 && n3 > n2 && n3 > n4) {
+    maior = n3;
+} else {
+    maior = n4;
+}
+
+console.log("Primeiro número:" , n1);
+console.log("Último número:" , n4);
+console.log("Maior número:" , maior);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

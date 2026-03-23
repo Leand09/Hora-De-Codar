@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n1 = Number(prompt("Digite o primeiro número:"));
+let n2 = Number(prompt("Digite o segundo número:"));
+let n3 = Number(prompt("Digite o terceiro número:"));
+let n4 = Number(prompt("Digite o quarto número:"));
+
+if (
+    n1 > 0 && n1 < 10 &&
+    n2 > 0 && n2 < 10 &&
+    n3 > 0 && n3 < 10 &&
+    n4 > 0 && n4 < 10
+) {
+    let media = (n1 + n2 + n3 + n4) / 4;
+
+    console.log("Média:", media);
+
+    if (media > 5) {
+        console.log("Você passou no teste");
+    } else {
+        console.log("tente novamente");
+    }
+}
+    </script>
+</body>
+</html>
