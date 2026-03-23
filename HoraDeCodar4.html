@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let estudantes = [];
+let nome;
+
+while (true) {
+    nome = prompt("Digite o nome do estudante (ou PARE para encerrar):");
+
+    if (nome === "PARE") {
+        break;
+    }
+
+    estudantes.push(nome);
+}
+
+console.log("Quantidade de estudantes:", estudantes.length);
+console.log("Lista de estudantes:", estudantes);
+
+let planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
+
+let planeta = prompt("Digite o nome de um planeta:");
+
+if (planetas.includes(planeta)) {
+    console.log("Planeta encontrado!");
+} else {
+    console.log("Planeta não está na lista.");
+}
+
+let frutas = ["Maçã", "Banana", "Uva", "Laranja"];
+let fruta;
+
+while (frutas.length > 0) {
+
+    console.log("Lista de frutas:", frutas);
+
+    fruta = prompt("Digite uma fruta para remover:");
+
+    if (frutas.includes(fruta)) {
+
+        let indice = frutas.indexOf(fruta);
+        frutas.splice(indice, 1);
+
+        console.log("Fruta foi retirada da lista");
+
+    } else {
+        console.log("Fruta indisponível no nosso mercado");
+    }
+}
+
+console.log("Lista de compras finalizada");
+    </script>
+</body>
+</html>
